@@ -25,7 +25,7 @@
     self.font = [FAKFontAwesome carIconWithSize:60];
     [self.font addAttribute:NSForegroundColorAttributeName value:[UIColor magentaColor]];
     [self.fontAwesomeButtonLabel setAttributedTitle:[self.font attributedString] forState:UIControlStateNormal];
-    self.statusBarNotification = [CWStatusBarNotification new];
+    self.statusBarNotification = [[CWStatusBarNotification alloc] init];
     self.awesomeButtonTapped = NO;
 }
 
